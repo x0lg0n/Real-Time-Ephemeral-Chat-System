@@ -200,15 +200,117 @@ real-time-ephemeral-chat-system/
 
 ## 🎯 Contributing
 
-We welcome contributions! Please follow these steps:
+We welcome contributions from the community! Here's how you can help make this project better:
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+### 🚀 Getting Started
 
-Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
+1. **Fork the Repository**
+   - Click the "Fork" button at the top right of this repository
+   - Clone your forked repository to your local machine
+   git clone https://github.com/your-username/real-time-ephemeral-chat-system.git
+   cd real-time-ephemeral-chat-system
+
+2. **Set Up Development Environment**
+   - Install dependencies: `npm install`
+   - Create your `.env.local` file (see Environment Variables section)
+   - Start the development server: `npm run dev`
+
+3. **Create a Feature Branch**
+   git checkout -b feature/your-feature-name
+   Use descriptive branch names like:
+   - `feature/add-user-authentication`
+   - `bugfix/fix-room-expiry-issue`
+   - `enhancement/improve-ui-components`
+
+### 📝 Development Guidelines
+
+**Code Quality Standards:**
+- ✅ Use TypeScript for all new code
+- ✅ Follow the existing ESLint configuration
+- ✅ Write clear, descriptive commit messages
+- ✅ Include tests for new functionality
+- ✅ Ensure all existing tests pass before submitting
+
+**Commit Message Format:**
+type(scope): brief description
+
+Detailed explanation of changes (optional)
+
+- Specific changes made
+- Reason for changes
+- Impact on functionality
+
+Resolves: #issue-number (if applicable)
+
+**Commit Types:**
+- `feat`: New feature
+- `fix`: Bug fix
+- `docs`: Documentation changes
+- `style`: Code style changes (formatting, etc.)
+- `refactor`: Code refactoring
+- `test`: Adding or modifying tests
+- `chore`: Maintenance tasks
+
+### 🔄 Submission Process
+
+1. **Before Pushing:**
+
+   # Run code quality checks
+
+   npm run lint
+   npm run build
+
+   # Ensure all tests pass
+
+   npm test
+
+2. **Push Your Changes:**
+   git push origin feature/your-feature-name
+
+3. **Create Pull Request:**
+   - Go to your fork on GitHub
+   - Click "New Pull Request"
+   - Select your feature branch
+   - Provide a clear title and detailed description
+   - Link any related issues
+
+### 🎯 What We're Looking For
+
+**Areas for Contribution:**
+
+- 🐛 Bug fixes and performance improvements
+- ✨ New features and enhancements
+- 📚 Documentation improvements
+- 🎨 UI/UX enhancements
+- 🧪 Test coverage expansion
+- 📱 Mobile responsiveness improvements
+
+**Good First Issues:**
+Check our [GitHub Issues](https://github.com/your-username/real-time-ephemeral-chat-system/issues) for issues labeled `good first issue` or `help wanted`.
+
+### 🤝 Community Guidelines
+
+- Be respectful and inclusive
+- Provide constructive feedback
+- Help others learn and grow
+- Follow our [Code of Conduct](CODE_OF_CONDUCT.md)
+- Ask questions in our [Discussions](https://github.com/your-username/real-time-ephemeral-chat-system/discussions)
+
+### 📋 Pull Request Review Process
+
+1. **Initial Review**: Maintainers will review your PR within 48 hours
+2. **Feedback**: Address any requested changes
+3. **Approval**: Once approved, your PR will be merged
+4. **Celebration**: 🎉 Your contribution is now part of the project!
+
+### 🆘 Need Help?
+
+- Check our [Documentation](docs/)
+- Join our [Discord Community](link-to-discord)
+- Create a [GitHub Discussion](https://github.com/your-username/real-time-ephemeral-chat-system/discussions)
+- Contact maintainers via email
+
+Thank you for contributing to make this project amazing! 🚀
 
 ### Code Quality Standards
 
@@ -236,15 +338,6 @@ For support, questions, or feature requests:
 - [Tailwind CSS](https://tailwindcss.com) - Styling framework
 - [React Query](https://tanstack.com/query) - Server state management
 - [Elysia.js](https://elysiajs.com) - API framework
-
-## 📈 Roadmap
-
-- [ ] End-to-end encryption
-- [ ] File sharing capabilities
-- [ ] Message reactions
-- [ ] Custom room settings
-- [ ] Mobile app version
-- [ ] Multi-language support
 
 ---
 

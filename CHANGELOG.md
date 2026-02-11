@@ -46,5 +46,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Responsive design
 - Basic security implementation
 
-[Unreleased]: https://github.com/your-username/real-time-ephemeral-chat-system/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/your-username/real-time-ephemeral-chat-system/releases/tag/v0.1.0
+[Unreleased]: https://github.com/x0lg0n/Real-Time-Ephemeral-Chat-System/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/x0lg0n/Real-Time-Ephemeral-Chat-System/releases/tag/v0.1.0

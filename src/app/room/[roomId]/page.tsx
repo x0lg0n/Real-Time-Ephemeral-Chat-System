@@ -25,7 +25,7 @@ const Page = () => {
   const inputRef = useRef<HTMLInputElement>(null)
 
   const [copyStatus, setCopyStatus] = useState("COPY")
-  const [timeRemaining, setTimeRemaining] = useState<number | null>(null)
+  const [elapsedSeconds, setElapsedSeconds] = useState(0)
 
   const { data: ttlData } = useQuery({
     queryKey: ["ttl", roomId],
@@ -35,29 +35,24 @@ const Page = () => {
     },
   })
 
-  useEffect(() => {
-    if (ttlData?.ttl !== undefined) setTimeRemaining(ttlData.ttl)
-  }, [ttlData])
+  const serverTtl = ttlData?.ttl ?? null
+  const timeRemaining =
+    serverTtl !== null ? Math.max(0, serverTtl - elapsedSeconds) : null
 
   useEffect(() => {
-    if (timeRemaining === null || timeRemaining < 0) return
-
-    if (timeRemaining === 0) {
-      router.push("/?destroyed=true")
-      return
-    }
+    if (serverTtl === null) return
 
     const interval = setInterval(() => {
-      setTimeRemaining((prev) => {
-        if (prev === null || prev <= 1) {
-          clearInterval(interval)
-          return 0
-        }
-        return prev - 1
-      })
+      setElapsedSeconds((prev) => prev + 1)
     }, 1000)
 
     return () => clearInterval(interval)
+  }, [serverTtl])
+
+  useEffect(() => {
+    if (timeRemaining !== null && timeRemaining <= 0) {
+      router.push("/?destroyed=true")
+    }
   }, [timeRemaining, router])
 
   const { data: messages, refetch } = useQuery({

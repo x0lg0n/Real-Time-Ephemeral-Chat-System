@@ -78,18 +78,6 @@ ROOM_EXPIRY_TIME=3600  # Room expiry time in seconds
 3. Copy the URL and token from the database dashboard
 4. Add them to your environment variables as `UPSTASH_REALTIME_URL` and `UPSTASH_REALTIME_TOKEN`
 
-### Environment Variable Details
-
-| Variable | Description | Example |
-
-|----------|-------------|---------|
-| `UPSTASH_REDIS_REST_URL` | REST endpoint for your Redis database | `https://us1-your-database-12345.upstash.io` |
-| `UPSTASH_REDIS_REST_TOKEN` | Authentication token for Redis | `AXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX` |
-| `UPSTASH_REALTIME_URL` | WebSocket endpoint for Realtime service | `wss://your-realtime.upstash.io` |
-| `UPSTASH_REALTIME_TOKEN` | Authentication token for Realtime | `eyXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX` |
-| `NEXT_PUBLIC_APP_URL` | Public URL of your application | `http://localhost:3000` |
-| `ROOM_EXPIRY_TIME` | Time in seconds before rooms expire | `3600` (1 hour) |
-
 > **Note**: Never commit your `.env.local` file to version control. It's already included in the `.gitignore` file.
 
 ## 🛠️ Installation
@@ -207,13 +195,13 @@ We welcome contributions from the community! Here's how you can help make this p
 1. **Fork the Repository**
    - Click the "Fork" button at the top right of this repository
    - Clone your forked repository to your local machine
-   git clone https://github.com/your-username/real-time-ephemeral-chat-system.git
+   git clone `https://github.com/x0lg0n/real-time-ephemeral-chat-system.git`
    cd real-time-ephemeral-chat-system
 
 2. **Set Up Development Environment**
-   - Install dependencies: `npm install`
+   - Install dependencies: `bun install`
    - Create your `.env.local` file (see Environment Variables section)
-   - Start the development server: `npm run dev`
+   - Start the development server: `bun run dev`
 
 3. **Create a Feature Branch**
    git checkout -b feature/your-feature-name
@@ -225,6 +213,7 @@ We welcome contributions from the community! Here's how you can help make this p
 ### 📝 Development Guidelines
 
 **Code Quality Standards:**
+
 - ✅ Use TypeScript for all new code
 - ✅ Follow the existing ESLint configuration
 - ✅ Write clear, descriptive commit messages
@@ -232,6 +221,7 @@ We welcome contributions from the community! Here's how you can help make this p
 - ✅ Ensure all existing tests pass before submitting
 
 **Commit Message Format:**
+
 type(scope): brief description
 
 Detailed explanation of changes (optional)
@@ -243,6 +233,7 @@ Detailed explanation of changes (optional)
 Resolves: #issue-number (if applicable)
 
 **Commit Types:**
+
 - `feat`: New feature
 - `fix`: Bug fix
 - `docs`: Documentation changes
@@ -255,17 +246,24 @@ Resolves: #issue-number (if applicable)
 
 1. **Before Pushing:**
 
-   # Run code quality checks
+   - Run code quality checks
 
-   npm run lint
-   npm run build
+      ```env
+         bun run lint
+         bun run build
+      ```
 
-   # Ensure all tests pass
+   - Ensure all tests pass
 
-   npm test
+      ```env
+         bun test
+      ```
 
 2. **Push Your Changes:**
-   git push origin feature/your-feature-name
+
+      ```bash
+         git push origin feature/-your-feature-name
+      ```
 
 3. **Create Pull Request:**
    - Go to your fork on GitHub
@@ -286,7 +284,7 @@ Resolves: #issue-number (if applicable)
 - 📱 Mobile responsiveness improvements
 
 **Good First Issues:**
-Check our [GitHub Issues](https://github.com/your-username/real-time-ephemeral-chat-system/issues) for issues labeled `good first issue` or `help wanted`.
+Check our [GitHub Issues](https://github.com/x0lg0n/real-time-ephemeral-chat-system/issues) for issues labeled `good first issue` or `help wanted`.
 
 ### 🤝 Community Guidelines
 
@@ -294,7 +292,7 @@ Check our [GitHub Issues](https://github.com/your-username/real-time-ephemeral-c
 - Provide constructive feedback
 - Help others learn and grow
 - Follow our [Code of Conduct](CODE_OF_CONDUCT.md)
-- Ask questions in our [Discussions](https://github.com/your-username/real-time-ephemeral-chat-system/discussions)
+- Ask questions in our [Discussions](https://github.com/x0lg0n/real-time-ephemeral-chat-system/discussions)
 
 ### 📋 Pull Request Review Process
 
@@ -307,7 +305,7 @@ Check our [GitHub Issues](https://github.com/your-username/real-time-ephemeral-c
 
 - Check our [Documentation](docs/)
 - Join our [Discord Community](link-to-discord)
-- Create a [GitHub Discussion](https://github.com/your-username/real-time-ephemeral-chat-system/discussions)
+- Create a [GitHub Discussion](https://github.com/x0lg0n/Real-Time-Ephemeral-Chat-System/discussions)
 - Contact maintainers via email
 
 Thank you for contributing to make this project amazing! 🚀
@@ -328,7 +326,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For support, questions, or feature requests:
 
-- Create an issue in the [GitHub Issues](https://github.com/your-username/real-time-ephemeral-chat-system/issues)
+- Create an issue in the [GitHub Issues](https://github.com/x0lg0n/Real-Time-Ephemeral-Chat-System/issues)
 - Contact the maintainer via email
 
 ## 💙 Acknowledgements

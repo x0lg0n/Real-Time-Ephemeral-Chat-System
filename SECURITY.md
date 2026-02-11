@@ -10,7 +10,7 @@ We release patches for security vulnerabilities. Which versions are eligible for
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability within this project, please send an email to [security@gmail.com] instead of using the public issue tracker. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this project, please send an email to `kumarsiddharthakain@gmail.com` instead of using the public issue tracker. All security vulnerabilities will be promptly addressed.
 
 Please do not publicly disclose the vulnerability until it has been addressed by the team.
 
@@ -52,7 +52,6 @@ This project does not collect or store personal information. All data is tempora
 
 For security-related questions or concerns, please contact:
 
-- Email: [securit@gmail.com]
-- PGP Key: [Your PGP key if available]
+- Email: `kumarsiddharthakain@gmail.com`
 
 We appreciate your efforts to responsibly disclose your findings and will make every effort to acknowledge your contributions.

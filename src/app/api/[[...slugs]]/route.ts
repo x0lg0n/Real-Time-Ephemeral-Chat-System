@@ -5,7 +5,8 @@ import { authMiddleware } from "./auth"
 import { z } from "zod"
 import { Message, realtime } from "@/lib/realtime"
 
-const ROOM_TTL_SECONDS =60 * 10
+const ROOM_TTL_SECONDS =
+  Number.parseInt(process.env.ROOM_EXPIRY_TIME ?? "", 10) || 60 * 10
 
 const rooms = new Elysia({ prefix: "/room" })
   .post("/create", async () => {
